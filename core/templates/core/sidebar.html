@@ -1,0 +1,25 @@
+{% load static %}
+    
+
+<div
+  class="border-right border-warning h-100"
+  style="border-right: 2px solid blue "
+>
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/1.jpg' %}"
+      alt="not work"
+      class="img-fluid rounded-circle mt-5"
+      width="100px"
+      height="100px"
+    />
+  </div>
+  <hr class="border-light" />
+  <h3 class=" text-white text-center mt-3 ">Diken Thapa</h3>
+  <nav class="nav flex-column text-center">
+    <a href="{% url 'home' %}" class="nav-link text-white {{home}}" >Home</a>
+    <a href="{% url 'services' %}" class="nav-link text-white {{services}}">Services</a>
+    <a href="{% url 'skill' %}" class="nav-link text-white {{skill}}">Skills</a>
+    <a href="{% url 'contact' %}" class="nav-link text-white {{contact}}">Contact</a>
+  </nav>
+</div>

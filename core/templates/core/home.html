@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+    
+
+<div>
+    <div class="text-center">
+        <img src="{% static 'core/images/1.jpg' %}" alt="profile" class="img-thumbnail" width="250px" height="220px" style="margin-top: 80px; " >
+    </div>
+
+    <div class=" text-white text-justify" style="margin-top: 100px;">
+        <h1 class=" font-weight-bold s ">Hello, </h1>
+        <div class="px-4" style="line-height: 2rem;">
+            <p style="text-indent: 100px;">
+                I am  <b class="text-warning">Diken Thapa</b> having 1 years of full stack web development
+                experences for globar bussiness. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus?
+                <p>since i am earning my bachelor degree in <b class="text-warning">BSCCSIT</b> from Academia International college. I have
+                served as a web developer at <b class="text-warning">DT technology </b>,one of the 
+            biggest premier digital marketing and web development firm. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nam laudantium perferendis illum voluptas officia est deserunt labore numquam veritatis!</p>
+       
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, praesentium dolor porro repudiandae unde tenetur sequi rem soluta veniam quaerat.</p>
+            
+        </div>
+    </div>
+<div class="text-center">
+<a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 "style="margin-right:20px">Hire Me</a>
+<a href="{% url 'contact' %}" class="btn btn-outline-info my-3" >Contact</a>
+</div>
+</div>
+{% endblock content %}
